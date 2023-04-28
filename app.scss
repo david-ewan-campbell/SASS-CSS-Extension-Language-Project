@@ -1,4 +1,7 @@
-$box-color: blue;
+@use 'navbar';
+@use 'header';
+
+$box-color: green;
 
 .box1 {
   background: $box-color;

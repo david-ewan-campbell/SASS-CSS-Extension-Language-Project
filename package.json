@@ -4,8 +4,13 @@
   "description": "learn sass or scss from scratch",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass app.scss:app.css --watch"
+    "compile-sass": "sass app.scss app.css --watch --no-source-map"
   },
   "author": "David Campbell",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "webpack": "^5.81.0"
+  }
 }
