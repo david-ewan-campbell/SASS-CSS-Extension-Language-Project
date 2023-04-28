@@ -1,4 +1,6 @@
+@use 'variables' as *; /* can also define a variable name i.e. as myColor & call with myColor.$indigo */
+
 header {
-    background: indigo;
-    color: white;
-  }
+  background: $indigo;
+  color: $white;
+}
