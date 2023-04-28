@@ -1,22 +1,26 @@
 nav {
+  background-color: indigo;
+  color: white;
+}
+
+header {
   background: orange;
   color: white;
 }
 
-/* can also define a variable name i.e. as myColor & call with myColor.$indigo */
-header {
-  background: indigo;
+nav {
+  width: 100%;
+  height: 80px;
+  background: orange;
+  line-height: 80px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
   color: white;
-}
-
-.box1 {
-  background: green;
-}
-
-.box2 {
-  background: green;
-}
-
-.box3 {
-  background: green;
 }

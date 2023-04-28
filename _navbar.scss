@@ -1,4 +1,6 @@
+@use 'variables' as myColors;
+
 nav {
-  background: orange;
-  color: white;
+  background-color: myColors.$indigo;
+  color: myColors.$white
 }
