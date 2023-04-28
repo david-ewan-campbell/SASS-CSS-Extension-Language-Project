@@ -1,7 +1,4 @@
-/* $red is a variable which can be reused */
 body {
-  background: red; }
+  background: grey; }
 
 /*# sourceMappingURL=app.css.map */
-
-/* compiled this code with a designated output file (app.css) with this command = sass app.scss app.css */
