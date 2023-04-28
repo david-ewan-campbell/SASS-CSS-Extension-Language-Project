@@ -1,5 +1,13 @@
-$red: grey;
+$box-color: blue;
 
-body {
-  background: $red;
+.box1 {
+  background: $box-color;
+}
+
+.box2 {
+  background: $box-color;
+}
+
+.box3 {
+  background: $box-color;
 }
