@@ -1,38 +1,22 @@
-@use 'navbar';
-@use 'header';
-
-$colors: ('orange', 'green', 'red', 'blue');
-$fontWeights: ('normal': 400, 'bold': 500, 'extraBold': 600);
-
-@debug map-get($fontWeights, 'bold');
-
-@each $key, $value in $fontWeights {
-  @debug "Your key is #{$key}";
-  @debug "Your value is #{$value}";
+@function grid($number) {
+  @return 100% / 12 * $number;
 }
 
-@each $key, $value in $fontWeights {
-  .font-#{key} {
-    font-weight: $value;
-  }
-  @debug "Your key is #{$key}";
-  @debug "Your value is #{$value}";
+.col-1 {
+  width: grid(1);
 }
 
-@each $color in $colors {
-  @debug $color;
-  .color-#{$color} {
-    background: #{$color};
-  }
-}
+$circle: 'abc';
 
-$startLoop: 1;
-$endLoop: 20;
-
-@for $i from $startLoop through $endLoop {
-  @debug $i;
-  .fontSize-#{$i} {
-    font-size: #{$i}px;
+.header {
+  width: 200px;
+  height: 200px;
+  @if $circle == 'normal' {
+    border-radius: 10px;
+  } @else if $circle == 'radius' {
+    border-radius: 50%;
+  } @else {
+    border-radius: 0;
   }
 }
 
