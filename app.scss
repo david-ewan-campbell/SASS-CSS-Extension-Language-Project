@@ -1,9 +1,19 @@
+@use 'sass:math';
+
 @function grid($number) {
-  @return 100% / 12 * $number;
+  @return math.div(100%, 12) * $number;
 }
 
 .col-1 {
   width: grid(1);
+}
+
+.col-2 {
+  width: grid(2);
+}
+
+.col-3 {
+  width: grid(3);
 }
 
 $circle: 'abc';
