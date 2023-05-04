@@ -1,23 +1,24 @@
-@use 'sass:math';
-
-@function grid($number) {
-  @return math.div(100%, 12) * $number;
+.alert, .alert-danger, .alert-success {
+  padding: 15px;
+  font-size: 14px;
+  color: white;
 }
 
-.col-1 {
-  width: grid(1);
+.alert-radius {
+  border-radius: 5px;
 }
 
-.col-2 {
-  width: grid(2);
+.alert-danger {
+  @extend .alert, .alert-radius;
+  background: red;
 }
 
-.col-3 {
-  width: grid(3);
+.alert-success {
+  @extend .alert, .alert-radius;
+  background: green;
 }
 
 $circle: 'abc';
-
 .header {
   width: 200px;
   height: 200px;
